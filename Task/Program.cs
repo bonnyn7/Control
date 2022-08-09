@@ -12,9 +12,10 @@
         static void SecondArray(string[] firstArray, string[] secondArray)
         {
             int count = 0;
+            int border = 3;
             for (int i = 0; i < firstArray.Length; i++)
             {
-                if (firstArray[i].Length <= 3)
+                if (firstArray[i].Length <= border)
                 {
                     secondArray[count] = firstArray[i];
                     count++;
